@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <h2></h2>
+    <header>
+        <h1 class="text-5xl text-center mt-10 bg-gray"><span class="font-semibold text-yellow-500 italic">welcome to</span> our another <span class="font-semibold text-yellow-500 italic"> web page</span>..</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white text-center">
+                <div class="bg-blue-300 p-8 rounded">
+                    <h2 class="text-2xl">Diposit</h2>
+                    <h2 class="text-4xl">$<span id="diposit-total">000</span></h2>
+                </div>
+                <div class="bg-pink-300 p-8 rounded">
+                    <h2 class="text-2xl">Withdraw</h2>
+                    <h2 class="text-4xl">$<span id="withdraw-total">000</span></h2>
+                </div>
+                <div class="bg-green-300 p-8 rounded">
+                    <h2 class="text-2xl">Balance</h2>
+                    <h2 class="text-4xl">$<span id="balance-total">1500</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid grid-cols-2 gap-4 mt-3">
+                <div class="bg-purple-400 py-3 rounded">
+                    <h3 class="text-3xl font-medium ml-3 mb-3">Please Diposit :</h3>
+                    <div>
+                        <input id="diposit-input" class="block border border-red-400 ml-3 rounded w-2/4 px-3 mb-3 " type="text" placeholder="enter your Diposit-$">
+
+                        <button id="diposit-button" class="bg-yellow-400 hover:bg-red-500 px-3 ml-3 font-medium text-white rounded">Diposit</button>
+                    </div>
+                </div>
+                <div class="bg-yellow-500 py-3 rounded">
+                    <h3 class="text-3xl font-medium ml-3 mb-3">Please Withdrow :</h3>
+                    <div>
+                        <input id="withdraw-input" class="block border border-red-400 ml-3 rounded w-2/4 px-3 mb-3 " type="text" placeholder="enter your withdrow-$">
+
+                        <button id="withdraw-button" class="bg-blue-400 hover:bg-pink-300 px-3 ml-3 font-medium text-white rounded">Withdrow</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+</html>
